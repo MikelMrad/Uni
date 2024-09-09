@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./style.module.css";
-import Apple from "../../static/apple.png"
+import Logo from "../../static/logo.png"
 import User from "../../static/user-interface.png"
 
 export default function Home() {
@@ -8,9 +8,8 @@ export default function Home() {
     <div className={styles.container}>
       <div className={styles.logo}>
         <Image 
-        src={Apple}
+        src={Logo}
         height={100}
-        width={100}
         alt='Logo'>
         </Image>
       </div>
