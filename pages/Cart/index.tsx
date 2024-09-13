@@ -12,7 +12,7 @@ export default function index() {
         <a href=''>
           <h1>Continue Shopping</h1>
         </a>
-        <a href=''>
+        <a href='/Checkout'>
           <h1>Checkout</h1>
         </a>
       </div>

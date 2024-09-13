@@ -17,12 +17,13 @@ export default function Home() {
         </a>
       </div>
       <div className={styles.navLinks}>
-        <a href=''>Home</a>
+        <a href='/'>Home</a>
         <a href=''>Shop Now</a>
-        <a href=''>About Us</a>
-        <a href=''>Contact Us</a>
+        <a href='/About-Us'>About Us</a>
+        <a href='/ContactUs'>Contact Us</a>
       </div>
       <div className={styles.login}>
+        <a href="/Cart">
         <Image 
         src={Cart}
         height={50}
@@ -32,12 +33,15 @@ export default function Home() {
           marginRight: "10%",
         }}>
         </Image>
+        </a>
+        <a>
         <Image 
         src={User}
         height={50}
         width={50}
         alt='Logo'>
         </Image>
+        </a>
       </div>
     </div>
   );
