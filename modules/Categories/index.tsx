@@ -16,7 +16,7 @@ export default function index() {
       <h1> Categories</h1>
       <div className={styles.cardContainer}>
       {categories.map((category) => (
-        <a href=''>
+        <a href='/Category'>
           <Card className={styles.card}>
           <CardHeader title={category.label}/>
           <CardMedia

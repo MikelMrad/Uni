@@ -18,8 +18,8 @@ export default function Home() {
       </div>
       <div className={styles.navLinks}>
         <a href='/'>Home</a>
-        <a href=''>Shop Now</a>
-        <a href='/About-Us'>About Us</a>
+        <a href='/Store'>Shop Now</a>
+        <a href='/AboutUs'>About Us</a>
         <a href='/ContactUs'>Contact Us</a>
       </div>
       <div className={styles.login}>

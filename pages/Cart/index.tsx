@@ -9,7 +9,7 @@ export default function index() {
       <NavBar/>
       <Categories/>
       <div className={styles.NavBtns}>
-        <a href=''>
+        <a href='/'>
           <h1>Continue Shopping</h1>
         </a>
         <a href='/Checkout'>

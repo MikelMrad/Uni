@@ -1,42 +1,31 @@
 [{
+	"id": 1,
 	"name": "Men T-Shirt",
-	"detail": "Lorem ipsum dolor sit amet",
-	"price": "99",
-	"hero": "OMG This just came out today!",
-	"image": "http://placehold.it/940x300/999/CCC"
+	"price": 19,
+	"image": "http://placehold.it/940x300/999/CCC",
+	"categorie": "men"
 },{
+	"id": 2,
 	"name": "Women T-Shirt",
-	"detail": "Lorem ipsum dolor sit amet",
-	"price": "99",
-	"info": "This is the latest and greatest product from Derp corp.",
-	"image": "http://placehold.it/300x300/999/CCC"
+	"price": 29,
+	"image": "http://placehold.it/940x300/999/CCC",
+	"categorie": "women"
 },{
-	"name": "Baby ",
-	"detail": "Lorem ipsum dolor sit amet",
-	"price": "99",
-	"offer": "BOGOF",
-	"image": "http://placehold.it/300x300/999/CCC"
+	"id": 3,
+	"name": "Baby T-Shirt",
+	"price": 9,
+	"image": "http://placehold.it/940x300/999/CCC",
+	"categorie": "baby"
 },{
-	"name": "Accessory ",
-	"detail": "Lorem ipsum dolor sit amet",
-	"price": "99",
-	"image": "http://placehold.it/300x300/999/CCC"
+	"id": 4,
+	"name": "Accessories",
+	"price": 19,
+	"image": "http://placehold.it/940x300/999/CCC",
+	"categorie": "accessories"
 },{
-	"name": "Product 4",
-	"detail": "Lorem ipsum dolor sit amet",
-	"price": "99",
-	"offer": "No srsly GTFO",
-	"image": "http://placehold.it/300x300/999/CCC"
-},{
-	"name": "Product 5",
-	"detail": "Lorem ipsum dolor sit amet",
-	"price": "99",
-	"image": "http://placehold.it/300x300/999/CCC"
-},{
-	"name": "Product 6",
-	"detail": "Lorem ipsum dolor sit amet",
-	"price": "99",
-	"info": "This is the latest and greatest product from Derp corp.",
-	"offer": "info with offer",
-	"image": "http://placehold.it/300x300/999/CCC"
+	"id": 5,
+	"name": "Sneakers",
+	"price": 49,
+	"image": "http://placehold.it/940x300/999/CCC",
+	"categorie": "footwear"
 }]
