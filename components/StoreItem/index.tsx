@@ -21,6 +21,9 @@ export default function index({id , name , price , image} : StoreItemProps) {
     />
     <CardContent>
       <p>Price : {price}$</p>
+      <div className={styles.cardContent}>
+        <a href=''>Add To Cart</a>
+      </div>
     </CardContent>
     </Card>
   )
