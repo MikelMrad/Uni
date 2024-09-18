@@ -7,8 +7,12 @@ import Footer from "../../modules/Footer/index"
 import StoreItems from "../../data/products.json"
 import StoreItem  from "../../components/StoreItem/index"
 import { Grid2 } from '@mui/material';
+import { useAppSelector } from '@/redux/store';
 
 export default function index() {
+
+  const username = useAppSelector((state) => state.login.value.username);
+
   return (
     <div>
       <NavBar/>
@@ -25,6 +29,7 @@ export default function index() {
           </Grid2>
         ))}
         </Grid2>
+        <p>{username}</p>
       <Footer/>
     </div>
   )

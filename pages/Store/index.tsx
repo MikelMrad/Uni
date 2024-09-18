@@ -2,8 +2,8 @@ import React from 'react';
 import NavBar from "../../modules/NavBar/index";
 import StoreItems from "../../data/products.json"
 import StoreItem  from "../../components/StoreItem/index"
-import styles from "./style.module.css";
 import { Grid2 } from '@mui/material';
+import styles from "./style.module.css";
 
 export default function index() {
   return (

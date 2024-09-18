@@ -11,7 +11,7 @@ export default function Home() {
         <a href="/">
         <Image 
         src={Logo}
-        height={100}
+        height={100}  
         alt='Logo'>
         </Image>
         </a>
@@ -34,7 +34,7 @@ export default function Home() {
         }}>
         </Image>
         </a>
-        <a>
+        <a href="/Login">
         <Image 
         src={User}
         height={50}
