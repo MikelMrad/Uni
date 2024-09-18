@@ -19,7 +19,7 @@ export default function Footer() {
             </Image>
           </a>
           <div className={styles.footerSocialsContainer}>
-            <a href="https://www.facebook.com/profile.php?id=100088695495851"><Image 
+            <a href=""><Image 
             src={FacebookImage}
             alt="Logo"
             width={20}

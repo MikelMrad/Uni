@@ -21,10 +21,10 @@ type Action = {
 const initialState = {
   value:{
     isLoggedIn: false,
-    username: " ",
-    email:  " ", 
-    birthday:  " ", 
-    uid:  " ", 
+    username: "",
+    email:  "", 
+    birthday:  "", 
+    uid:  "", 
   }as LoginState, 
 } as InitialState;
 

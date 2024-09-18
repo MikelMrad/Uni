@@ -6,6 +6,10 @@
   margin: 0;
 }
 
+.card img {
+  object-fit: contain;
+}
+
 .card a{
   text-decoration: none;
   padding: 3% 20%;
@@ -27,5 +31,4 @@
 .cardContent {
   display: flex;
   justify-content: center;
-  
 }

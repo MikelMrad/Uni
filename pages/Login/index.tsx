@@ -7,6 +7,7 @@ import { useState } from 'react';
 import { logIn , logOut } from "@/redux/features/loginSlice"
 import { useDispatch } from 'react-redux';
 import { AppDispatch } from '@/redux/store';
+import Footer from '../../modules/Footer';
 
 
 export default function index() {
@@ -20,7 +21,7 @@ export default function index() {
 
   const onclickLogIn = () => {
     const actionPayload = {
-      username: userFname + userLname,
+      username: userFname + " " + userLname,
       email: email,
       birthday: birthday,
     }
@@ -55,6 +56,7 @@ export default function index() {
         <a onClick={onclickLogOut}>Log out</a>
         </div>
       </div>  
+      <Footer/>
     </div>
   )
 }
