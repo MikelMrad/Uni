@@ -1,10 +1,12 @@
 import React from 'react';
+import NavBar from "../../../modules/NavBar";
 import styles from "./style.module.css";
 
-export default function index() {
+export default function page() {
   return (
     <div>
-      <h1>Checkout</h1>
+      <NavBar/>
+      
     </div>
   )
 }

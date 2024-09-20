@@ -3,7 +3,7 @@ import styles from "./style.module.css";
 import { Card, CardContent ,CardHeader ,CardMedia} from '@mui/material';
 
 type StoreItemProps = {
-  id: number,
+  id: string,
   name: string,
   price: number,
   image:string,
@@ -11,7 +11,7 @@ type StoreItemProps = {
 
 export default function index({id , name , price , image} : StoreItemProps) {
   return (
-    <Card className={styles.card}>
+    <Card className={styles.card} key={id}>
     <CardHeader title={name}/>
     <CardMedia
       component="img"

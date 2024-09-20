@@ -1,12 +1,10 @@
 import React from 'react';
-import NavBar from "../../modules/NavBar/index";
 import styles from "./style.module.css";
 
-export default function index() {
+export default function page() {
   return (
     <div>
-      <NavBar/>
-      
+      <h1>Category</h1>
     </div>
   )
 }

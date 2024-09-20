@@ -1,11 +1,12 @@
+'use client'
 import React from 'react';
-import NavBar from "../../modules/NavBar/index";
-import StoreItems from "../../data/products.json"
-import StoreItem  from "../../components/StoreItem/index"
+import NavBar from "../../../modules/NavBar/index";
+import StoreItems from "../../../data/products.json"
+import StoreItem  from "../../../components/StoreItem/index"
 import { Grid2 } from '@mui/material';
 import styles from "./style.module.css";
 
-export default function index() {
+export default function page() {
   return (
     <div>
       <NavBar/>

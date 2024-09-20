@@ -19,27 +19,33 @@ export default function Footer() {
             </Image>
           </a>
           <div className={styles.footerSocialsContainer}>
-            <a href=""><Image 
-            src={FacebookImage}
-            alt="Logo"
-            width={20}
-            height={20}
-            className="social-image"> 
-            </Image></a>
-            <a href=""><Image 
-            src={LinkedInImage}
-            alt="Logo"
-            width={20}
-            height={20}
-            className="social-image"> 
-            </Image></a>
-            <a href=""><Image 
-            src={InstagramImage}
-            alt="Logo"
-            width={20}
-            height={20}
-            className="social-image"> 
-            </Image></a>  
+            <a href="">
+              <Image 
+              src={FacebookImage}
+              alt="Logo"
+              width={20}
+              height={20}
+              className="social-image"> 
+              </Image>
+            </a>
+            <a href="">
+              <Image 
+              src={LinkedInImage}
+              alt="Logo"
+              width={20}
+              height={20}
+              className="social-image"> 
+              </Image>
+            </a>
+            <a href="">
+              <Image 
+              src={InstagramImage}
+              alt="Logo"
+              width={20}
+              height={20}
+              className="social-image"> 
+              </Image>
+            </a>  
           </div>
           <div className={styles.textContainer}>
             <div className={styles.rightTextContainer}>

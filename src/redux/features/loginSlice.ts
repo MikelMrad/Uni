@@ -42,7 +42,7 @@ export const login = createSlice({
           username: action.payload.username,
           email: action.payload.email,
           birthday: action.payload.birthday,
-          uid: "bedur1",
+          uid: "123wr234rsaf2",
         }
       }
     },
