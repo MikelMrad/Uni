@@ -1,10 +1,10 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-type InitialState = {
+interface InitialState {
   value: LoginState;
 }
 
-type LoginState = {
+interface LoginState  {
   isLoggedIn: boolean,
   username: string,
   email:  string, 
@@ -12,7 +12,7 @@ type LoginState = {
   uid:  string, 
 }
 
-type Action = {
+interface Action {
   username: string,
   email:  string, 
   birthday:  string, 
