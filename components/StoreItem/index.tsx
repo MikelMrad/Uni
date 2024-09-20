@@ -6,16 +6,17 @@ import { addItem } from '../../src/redux/features/cartSlice';
 
 type StoreItemProps = {
   id: string;
+  availableQuantity: number;
   name: string;
   price: number;
   image: string;
 };
 
-export default function StoreItem({ id, name, price, image }: StoreItemProps) {
+export default function StoreItem({ id, availableQuantity, name, price, image }: StoreItemProps) {
   const dispatch = useDispatch();
 
   const handleAddToCart = () => {
-    dispatch(addItem({ id, name, quantity: 1, image }));
+    dispatch(addItem({ id, availableQuantity, name, quantity: 1, image }));
   };
 
   return (

@@ -2,6 +2,7 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 interface CartItem {
   id: string,
+  availableQuantity:number,
   quantity: number,
   image: string,
   name: string,
@@ -22,8 +23,14 @@ const cartSlice = createSlice({
     addItem: (state, action: PayloadAction<CartItem>) => {
       const existingItem = state.items.find(item => item.id === action.payload.id);
       if (existingItem) {
-        existingItem.quantity += action.payload.quantity;
-      } else {
+        if(existingItem.quantity >= existingItem.availableQuantity){
+          alert("Maximum Amount Reached")
+        }
+        else {
+          existingItem.quantity += action.payload.quantity;
+        }
+      } 
+      else {
         state.items.push(action.payload);
       }
     },
