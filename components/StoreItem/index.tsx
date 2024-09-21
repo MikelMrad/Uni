@@ -16,7 +16,7 @@ export default function StoreItem({ id, availableQuantity, name, price, image }:
   const dispatch = useDispatch();
 
   const handleAddToCart = () => {
-    dispatch(addItem({ id, availableQuantity, name, quantity: 1, image }));
+    dispatch(addItem({ id, availableQuantity, name, quantity: 1, image , itemsInCart: 1}));
   };
 
   return (
@@ -31,9 +31,9 @@ export default function StoreItem({ id, availableQuantity, name, price, image }:
       <CardContent>
         <p>Price: {price}$</p>
         <div className={styles.cardContent}>
-          <a onClick={(e) => { e.preventDefault(); handleAddToCart(); }}>
+          <button onClick={(e) => { e.preventDefault(); handleAddToCart(); }}>
             Add To Cart
-          </a>
+          </button>
         </div>
       </CardContent>
     </Card>

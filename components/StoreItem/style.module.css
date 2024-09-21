@@ -10,7 +10,7 @@
   object-fit: contain;
 }
 
-.card a{
+.card button{
   cursor: pointer;
   text-decoration: none;
   padding: 3% 20%;
@@ -23,7 +23,7 @@
   transition: 0.35s;
 }
 
-.card a:hover{
+.card button:hover{
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
   transition: 0.35s;
