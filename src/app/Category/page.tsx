@@ -10,7 +10,6 @@ import { useAppSelector } from '@/redux/store';
 
 export default function page() {
 
-  const dispatch = useDispatch();
   const filterCategory = useAppSelector((state) => state.category.category);
 
   return (

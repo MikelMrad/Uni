@@ -18,7 +18,7 @@ export default function index() {
       <h1> Categories</h1>
       <div className={styles.cardContainer}>
       {categories.map((category) => (
-        <a onClick={() =>handleFilterChange(category.id)}>
+        <a href='Category' onClick={() =>handleFilterChange(category.id)}>
           <Card className={styles.card}>
           <CardHeader title={category.label}/>
           <CardMedia
