@@ -20,6 +20,7 @@
 }
 
 .card {
+  cursor:pointer;
   border-radius: 15px;
   width: 13rem;
   display: flex;

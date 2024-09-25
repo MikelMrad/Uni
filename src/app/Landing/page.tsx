@@ -8,10 +8,9 @@ import StoreItems from "../../../data/products.json"
 import StoreItem  from "../../../components/StoreItem/index"
 import { Grid2 } from '@mui/material';
 import { useAppSelector } from '@/redux/store';
-
 export default function page() {
 
-  const username = useAppSelector((state) => state.login.value.username);
+  const username = useAppSelector((state) => state.login.value.username); 
 
   return (
     <div>
@@ -24,8 +23,10 @@ export default function page() {
         container
         spacing={4}>
         {StoreItems.map(item => (
-          <Grid2 size={2.4}>
-            <StoreItem {...item} key={item.id}/> 
+          <Grid2 size={2.4} key={item.id}>
+            <a>
+            <StoreItem {...item}/> 
+            </a>
           </Grid2>
         ))}
         </Grid2>
