@@ -1,5 +1,6 @@
 .Container{
   width: 30%;
-  background-color: rgb(204, 204, 204);
-  height: 1000px;
+  background-color: rgb(240, 240, 240);
+  padding: 10px 50px;
+  border-top-left-radius: 50px;
 }

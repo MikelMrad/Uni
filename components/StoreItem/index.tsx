@@ -16,7 +16,7 @@ export default function StoreItem({ id, availableQuantity, name, price, image }:
   const dispatch = useDispatch();
 
   const handleAddToCart = () => {
-    dispatch(addItem({ id, availableQuantity, name, quantity: 1, image , itemsInCart: 1}));
+    dispatch(addItem({ id, availableQuantity, name, quantity: 1, image , itemsInCart: 1, price}));
   };
 
   return (
