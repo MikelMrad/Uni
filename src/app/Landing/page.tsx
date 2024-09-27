@@ -24,9 +24,7 @@ export default function page() {
         spacing={4}>
         {StoreItems.map(item => (
           <Grid2 size={2.4} key={item.id}>
-            <a>
             <StoreItem {...item}/> 
-            </a>
           </Grid2>
         ))}
         </Grid2>

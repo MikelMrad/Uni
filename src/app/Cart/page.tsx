@@ -6,6 +6,7 @@ import styles from "./style.module.css";
 import { useDispatch } from 'react-redux';
 import { removeItem, clearCart } from '../../redux/features/cartSlice';
 import { useAppSelector } from '@/redux/store';
+import Footer from '../../../modules/Footer';
 
 export default function page() {
 
@@ -32,39 +33,43 @@ export default function page() {
   return (
     <div className={styles.Container}>
       <NavBar/>
-      <div>
-      <h2>Your Cart</h2>
-      <h2>Total: {totalPrice()}$</h2>
-      </div>
-      {cartItems.length === 0 ? (
-        <p>Your cart is empty.</p>
-      ) : (
-        <ul>
-          {cartItems.map(item => (
-            <li key={item.id}>
-              {/* <Image src={item.image} alt='Item Id: {item.id}' height={50} width={50}></Image>*/}Name: {item.name}, Quantity: {item.quantity} 
-              <button 
-              onClick={() => handleRemoveItem(item.id)}
-              style={{
-                marginLeft: "10px",
-              }}>Remove</button>
-            </li>
-          ))}
-        </ul>
-      )}
-      <button onClick={handleClearCart}>Clear Cart</button>
-      <div className={styles.btnsContainer}>
-        <div className={styles.NavBtns}>
-          <a href='/'>
-            <h1>Continue Shopping</h1>
-          </a>
-          {cartItems.length === 0 ? (
-            <p></p>):(
-              <a href='/Checkout'>
-              <h1>Checkout</h1>
-            </a>)}
+      <div className={styles.innerContainer}>
+        <div>
+        <h2>Your Cart</h2>
+        <h2>Total: {totalPrice()}$</h2>
+        </div>
+        {cartItems.length === 0 ? (
+          <p>Your cart is empty.</p>
+        ) : (
+          <ul className={styles.list}>
+            {cartItems.map(item => (
+              <li key={item.id}>
+                <Image src={item.image} alt='Item Id: {item.id}' height={100} width={100}></Image> 
+                <p>Name: {item.name} x {item.quantity} </p>
+                <button 
+                onClick={() => handleRemoveItem(item.id)}
+                style={{
+                  marginLeft: "10px",
+                }}>Remove</button>
+              </li>
+            ))}
+          </ul>
+        )}
+        <button onClick={handleClearCart}>Clear Cart</button>
+        <div className={styles.btnsContainer}>
+          <div className={styles.NavBtns}>
+            <a href='/'>
+              <h1>Continue Shopping</h1>
+            </a>
+            {cartItems.length === 0 ? (
+              <p></p>):(
+                <a href='/Checkout'>
+                <h1>Checkout</h1>
+              </a>)}
+          </div>
         </div>
       </div>
+      <Footer/>
     </div>
   )
 }
