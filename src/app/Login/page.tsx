@@ -34,7 +34,7 @@ export default function page (){
   }
 
   return (
-    <div>
+    <div className={styles.container}>
       <div className={styles.logo}>
         <a href="/">
         <Image 

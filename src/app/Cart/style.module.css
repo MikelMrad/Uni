@@ -39,3 +39,12 @@
   font-weight: 400;
   padding:0 10px;
 }
+
+.list li{
+  display: flex;
+  align-items: center;
+}
+
+.innerContainer {
+  margin: 20px;
+}

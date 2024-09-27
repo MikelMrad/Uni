@@ -1,7 +1,7 @@
 .bannerContainer {
   margin: auto;
   position: relative;
-  min-height: 600px;
+  height: 600px;
   max-width: 100%;
   overflow: hidden;
 }
@@ -21,6 +21,7 @@
 .bannerSlide {
   width: 100%;
   position: relative;
+  object-fit: fill;
 }
 
 .bannerSlide h1,
