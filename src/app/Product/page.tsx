@@ -17,18 +17,18 @@ export default function page() {
   const filterProduct = useAppSelector((state) => state.product.product)
   const cartProduct = useAppSelector((state) => state.cart.items)
   const product = StoreItems.filter(item => item.id === filterProduct)[0]
-  const productInCartNumber = cartProduct.filter(item => item.id === filterProduct)[0]
+  let productInCartNumber = cartProduct.filter(item => item.id === filterProduct)[0]?.quantity ?? 0
 
   const removeProduct = () => {
     quantity > 0 ? setQuantity(prevQuantity => prevQuantity - 1) : alert("Quantity Can't Be Negative");
   }
 
   const addProduct = () => {
-    quantity < product.availableQuantity-productInCartNumber.quantity ? setQuantity(prevQuantity => prevQuantity + 1) : alert("Maximum Number Reached");
+    quantity < product.availableQuantity - productInCartNumber ? setQuantity(prevQuantity => prevQuantity + 1) : alert("Maximum Number Reached");
   }
 
   const handleAddToCart = () => {
-    dispatch(addItem({ id:product.id , availableQuantity:product.availableQuantity , name:product.name , quantity, image:product.image , price:product.price }));
+    dispatch(addItem({ id:product.id , availableQuantity:product.availableQuantity , name:product.name , quantity , image:product.image , price:product.price }));
   };
   
   return (
