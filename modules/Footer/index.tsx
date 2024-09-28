@@ -52,10 +52,10 @@ export default function Footer() {
               <a href="">
                 Privacy & Policies
               </a>
-              <a href="https://www.estests.com/t-and-c">
+              <a href="/TermsAndConditions">
                 Terms & Conditions
               </a>
-              <a href="mailto:pr@academicassessment.com">
+              <a href="/ContactUs">
                 Contact Us
               </a>
             </div>

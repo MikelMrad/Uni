@@ -7,6 +7,7 @@ import { Grid2 } from '@mui/material';
 import styles from "./style.module.css";
 import { useDispatch } from 'react-redux';
 import { useAppSelector } from '@/redux/store';
+import Footer from '../../../modules/Footer';
 
 export default function page() {
 
@@ -28,6 +29,7 @@ export default function page() {
         ))}
         </Grid2>
       </div>
+      <Footer/>
     </div>
   )
 }

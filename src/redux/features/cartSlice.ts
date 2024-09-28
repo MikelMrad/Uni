@@ -2,7 +2,6 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 interface CartItem {
   id: string,
-  itemsInCart:number,
   availableQuantity:number,
   quantity: number,
   image: string,
@@ -30,7 +29,6 @@ const cartSlice = createSlice({
         }
         else {
           existingItem.quantity += action.payload.quantity;
-          existingItem.itemsInCart += 1;
         }
       } 
       else {

@@ -11,7 +11,7 @@ export default function Home() {
 
   let cartCount = 0;
   cartItems.forEach(item => {
-    cartCount += item.itemsInCart;
+    cartCount += item.quantity;
   });
 
   return (
